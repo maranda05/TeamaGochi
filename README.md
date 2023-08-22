@@ -1,0 +1,2 @@
+# TeamaGochi
+Proyecto intro 
