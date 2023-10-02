@@ -7,13 +7,17 @@
     <title>¡TeamaGochi!</title>
 </head>
 <body>
-    <h1>¡TeamaGochi!</h1>
+    <h1>¡TeamaGochi! Inicio de sesión</h1>
     <ul>
         <li><a href="term-cond/">Terms & Condition</a></li>
         <li><a href="creators/">Creators</a></li>
+        {% if request.user.is_authenticated %}
+            <li><a href="">Logout</a></li>
+        {% else %}
+        <li><a href="">Login</a></li>
+        {% endif %}
     </ul>
 
-    {% block content %}{% endblock %}
 </body>
 </html>
 
