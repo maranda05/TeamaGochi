@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="/static/css/style_login.css"/>
 </head>
 <body>
-    <h3>LOGIN</h3>
-<br>
-<form action="" method="post">
-    {% csrf_token %}
-
-    <input typr="text" name="username" id="" placeholder="Nombre de usuario">
+    <div id="container">
+        <h3>¡TeamaGochi! Login</h3>
     <br>
-    <input type="password" name="password" id="" placeholder="Contraseña">
+        <form action="" method="post">
+            {% csrf_token %}
 
-    <br>
-    <button type="submit">Iniciar Sesión</button>
+            <input type="text" name="username" id="" placeholder="Nombre de usuario">
+            <br>
+            <input type="password" name="password" id="" placeholder="Contraseña">
 
-</form>
+            <br>
+            <button type="submit">Iniciar Sesión</button>
+            <br>
+        </form>
+    <li><a href="term-cond/">Terms & Condition</a></li>
+    </div>
 </body>
 </html>

@@ -5,22 +5,30 @@
     <meta chatset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡TeamaGochi!</title>
+    <link rel="stylesheet" href="/static/css/style.css"/>
 </head>
 <body>
-    <h1>¡TeamaGochi! Inicio de sesión</h1>
-    <ul>
-        <li><a href="term-cond/">Terms & Condition</a></li>
-        <li><a href="creators/">Creators</a></li>
-        {% if request.user.is_authenticated %}
-            <li><a href="">Logout</a></li>
-        {% else %}
-        <li><a href="">Login</a></li>
-        {% endif %}
-        <h4>
-            {{ user.username | upper }}, bienvenido
-        </h4>
-        <li><a href="admin/">ADMIN</a></li>
-    </ul>
+
+    <div id="container">
+
+        <header>
+            <h1>¡TeamaGochi!</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                {% if request.user.is_authenticated %}
+                {{ user.username | upper }}, welcome.
+                <li><a href="logout/">Logout</a></li>
+                {% else %}
+                <li><a href="">Login</a></li>
+                {% endif %}
+                <li><a href="creators/">Creators</a></li>
+                <li><a href="settings/">Settings</a></li>
+                <li><a href="info/">Animals</a></li>
+            </ul>
+        </nav>
+    </div>
 
 </body>
 </html>
