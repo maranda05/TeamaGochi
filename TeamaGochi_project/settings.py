@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'TeamaGochi_Home'
+    #'TeamaGochi_Home'
 ]
 
 MIDDLEWARE = [
@@ -80,8 +80,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'teamagochi',
         'USER': 'postgres',
-        'PASSWORD': '19c14X10j30B#',
-        'HOST': '127.0.0.1',
+        'PASSWORD': 'Presi.2023',
+        'HOST': 'localhost',
         'PORT': '5432'
     }
 }

@@ -3,15 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>settings</title>
+    <title>Config.</title>
+    <link rel="stylesheet" href="/static/css/style_settings.css"/>
 </head>
 <body>
-    <h1>SETTINGS</h1>
-    <li><a href="/">BACK</a></li>
-    <h2>Insert alphanumeric code:</h2>
-    <input type="text" name="code" id="" placeholder="Insert here">
-    <br>
-    <button type="submit">Confirm</button>
+    <header>
+        <h1>Configuración</h1>
+    </header>
+
+    <div id="container_settings">
+        <nav>
+            <li><a href="/">BACK</a></li>
+        </nav>
+
+        <pepecardenas>
+            <form action="/buscar/" method="GET">
+                <h2>Escribe un código alfanumérico:</h2>
+                <input type="text" name="code" id="" placeholder="Ingresa aqui">
+                <br>
+                <input type="submit" value="Buscar">
+            </form>
+        </pepecardenas>
+    </div>
 
 </body>
 </html>

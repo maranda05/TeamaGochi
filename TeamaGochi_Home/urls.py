@@ -7,5 +7,6 @@ urlpatterns = [
     path('creators/',views.creators),
     path('logout/', views.exit),
     path('settings/', views.settings),
-    path('info/', views.info)
+    path('info/', views.info),
+    path('buscar/', views.buscar)
 ]

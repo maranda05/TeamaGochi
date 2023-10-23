@@ -28,6 +28,24 @@
                 <li><a href="info/">Animals</a></li>
             </ul>
         </nav>
+        <animalitos_s>
+            <p>Animal: <strong>{{query}}</strong></p>
+            {% if animales_salvajes %}
+                <ul>
+                    {% for a_extincion in animales_salvajes %}
+                        <li>
+                            {animales_salvajes.animal}
+                            {animales_salvajes.especie}
+                            {animales_salvajes.cantidad}
+                            {animales_salvajes.habitat}
+                            {animales_salvajes.causa}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No hay animal</p>
+            {% endif %}
+        </animalitos_s>
     </div>
 
 </body>
