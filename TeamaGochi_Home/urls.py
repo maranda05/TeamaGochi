@@ -8,5 +8,6 @@ urlpatterns = [
     path('logout/', views.exit),
     path('settings/', views.settings),
     path('info/', views.info),
-    path('buscar/', views.buscar)
+    path('buscar/', views.buscar),
+    path("formulario/", views.formulario),
 ]

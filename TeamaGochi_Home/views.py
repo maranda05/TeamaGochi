@@ -25,12 +25,15 @@ def exit(request):
     logout(request)
     return redirect('/')
 
+def formulario(request):
+    return render(request, "TeamaGochi_Home/formulario.html")
+
 def buscar(request):
     if request.GET["code"]:
         #mensaje="Animal asociado al código: %r" %request.GET["code"]
         animalito=request.GET["code"]
         mascota=Information.objects.filter(idanimal__icontains=animalito)
-        return render(request, "index/", {"animales_salvajes":mascota, "query":animalito}) #####Posible error
+        return render(request, "TeamaGochi_Home/recepcion_info.html", {"mascota":mascota, "query":animalito}) #####Posible error
     else:
         mensaje="Por favor ingrese un código"
     return HttpResponse(mensaje)
