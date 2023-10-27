@@ -6,23 +6,24 @@
     <title>Datos</title>
 </head>
 <body>
+    <li><a href="/">Atras</a></li>
+
     <animalitos_s>
         <p>Animal: <strong>{{query}}</strong></p>
         {% if mascota %}
             <ul>
                 {% for nombre in mascota %}
-                    <li>
-                        {nombre.animal}
-                        {nombre.especie}
-                        {nombre.cantidad}
-                        {nombre.habitat}
-                        {nombre.causa}
-                    </li>
+                    <li>{{nombre.animal}}</li>
+                    <li>{{nombre.especie}}</li>
+                    <li>{{nombre.cantidad}}</li>
+                    <li>{{nombre.habitat}}</li>
+                    <li>{{nombre.causa}}</li>
                 {% endfor %}
             </ul>
         {% else %}
             <p>No hay animal</p>
         {% endif %}
+
     </animalitos_s>
 </body>
 </html>

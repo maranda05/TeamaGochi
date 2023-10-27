@@ -7,21 +7,29 @@
     <link rel="stylesheet" href="/static/css/style_login.css"/>
 </head>
 <body>
-    <div id="container">
-        <h3>¡TeamaGochi! Login</h3>
-    <br>
+    <div id="container_login">
+        <header>
+            <h3>¡TeamaGochi! Login</h3>
+        </header>
+        <br>
+        
         <form action="" method="post">
             {% csrf_token %}
-
+                
             <input type="text" name="username" id="" placeholder="Nombre de usuario">
             <br>
             <input type="password" name="password" id="" placeholder="Contraseña">
-
             <br>
             <button type="submit">Iniciar Sesión</button>
             <br>
         </form>
-    <li><a href="term-cond/">Terms & Condition</a></li>
+        
+        <nav>
+            <ul>
+                <li><a href="term-cond/">Terminos y condiciones</a></li>
+            </ul>
+        </nav>
+        
     </div>
 </body>
 </html>
