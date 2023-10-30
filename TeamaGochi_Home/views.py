@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from django.http import HttpResponse
-from TeamaGochi_Home.models import Information
+from TeamaGochi_Home.models import information
 
 # Create your views here.
 def index(request):
@@ -29,11 +29,17 @@ def formulario(request):
     return render(request, "TeamaGochi_Home/formulario.html")
 
 def buscar(request):
-    if request.GET["code"]:
-        #mensaje="Animal asociado al código: %r" %request.GET["code"]
-        animalito=request.GET["code"]
-        mascota=Information.objects.filter(idanimal__icontains=animalito)
-        return render(request, "TeamaGochi_Home/recepcion_info.html", {"mascota":mascota, "query":animalito}) #####Posible error
+    mensaje= ""
+    animalito=request.GET["code"]
+    print(animalito)
+
+    if animalito:
+        try:
+            mascota=information.objects.filter(idanimal=animalito)
+            return render(request, "TeamaGochi_Home/recepcion_info.html", {"mascota":mascota, "query":animalito})
+        except information.DoesNotExist:
+            mensaje = "No hay animales con el código: %s" % animalito
     else:
-        mensaje="Por favor ingrese un código"
-    return HttpResponse(mensaje)
+            mensaje = "Por favor ingresa un código."
+
+    return HttpResponse(mensaje)      
