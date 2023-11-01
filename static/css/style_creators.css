@@ -14,12 +14,11 @@ header{
     width: 100%;
     text-align: center;
 }
-
-nav li a {
+nav enlace a {
     text-decoration: none;
   }
   
-nav li {
+nav enlace li {
     display: inline-block;
     padding: 10px 20px; /* Ajusta el padding según tu preferencia */
     text-align: right;
@@ -34,7 +33,11 @@ nav li {
 }
   
   /* Cambia el color de fondo y el texto al pasar el cursor sobre el botón */
-nav li:hover {
+nav enlace:hover {
     background-color: #228B22; /* Cambia este color al verde más oscuro al pasar el cursor */
     color: burlywood; /* Cambia el color del texto al pasar el cursor */
+}
+
+nav ul li{
+    text-align: center;
 }

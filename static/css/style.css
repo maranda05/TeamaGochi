@@ -1,8 +1,9 @@
 
 body{
-    background: rgb(122, 222, 255);
-    background-size: auto;
+    background:aqua;
+    background-size: cover;
     font-family: Arial;
+    background-repeat: no-repeat;
 }
 
 #container{
@@ -15,10 +16,88 @@ header{
     height: 100px;
     width: 100%;
     text-align: center;
+    color:rgb(20, 185, 53)
 }
 
-nav ul li{
-    float: right;
-    list-style: none;
-    margin: 10px;
+nav ul a {
+    text-decoration: none;
+  }
+  
+nav ul log{
+    display: inline-block;
+    padding: 10px 20px; /* Ajusta el padding según tu preferencia */
+    text-align: right;
+    text-decoration: none;
+    background-color: #2E8B57; /* Cambia este color al verde oscuro deseado */
+    color: #1337bc; /* Color del texto dentro del botón */
+    border: 2px solid #2E8B57; /* Puedes ajustar el grosor del borde */
+    border-radius: 5px; /* Ajusta el radio de las esquinas según tu preferencia */
+    font-weight: bold; /* Ajusta la fuente según tus preferencias */
+    transition: background-color 0.3s, color 0.3s; /* Efecto de transición suave */
+
 }
+  
+  /* Cambia el color de fondo y el texto al pasar el cursor sobre el botón */
+nav ul log:hover {
+    background-color: #228B22; /* Cambia este color al verde más oscuro al pasar el cursor */
+    color: burlywood; /* Cambia el color del texto al pasar el cursor */
+}
+
+nav ul creadores{
+    display: inline-block;
+    padding: 10px 20px; /* Ajusta el padding según tu preferencia */
+    text-align: right;
+    text-decoration: none;
+    background-color: #2E8B57; /* Cambia este color al verde oscuro deseado */
+    color: #1337bc; /* Color del texto dentro del botón */
+    border: 2px solid #2E8B57; /* Puedes ajustar el grosor del borde */
+    border-radius: 5px; /* Ajusta el radio de las esquinas según tu preferencia */
+    font-weight: bold; /* Ajusta la fuente según tus preferencias */
+    transition: background-color 0.3s, color 0.3s; /* Efecto de transición suave */
+}
+  
+  /* Cambia el color de fondo y el texto al pasar el cursor sobre el botón */
+nav ul creadores:hover {
+    background-color: #228B22; /* Cambia este color al verde más oscuro al pasar el cursor */
+    color: burlywood; /* Cambia el color del texto al pasar el cursor */
+}
+
+nav ul sett{
+    display: inline-block;
+    padding: 10px 20px; /* Ajusta el padding según tu preferencia */
+    text-align: right;
+    text-decoration: none;
+    background-color: #2E8B57; /* Cambia este color al verde oscuro deseado */
+    color: #1337bc; /* Color del texto dentro del botón */
+    border: 2px solid #2E8B57; /* Puedes ajustar el grosor del borde */
+    border-radius: 5px; /* Ajusta el radio de las esquinas según tu preferencia */
+    font-weight: bold; /* Ajusta la fuente según tus preferencias */
+    transition: background-color 0.3s, color 0.3s; /* Efecto de transición suave */
+}
+  
+  /* Cambia el color de fondo y el texto al pasar el cursor sobre el botón */
+nav ul sett:hover {
+    background-color: #228B22; /* Cambia este color al verde más oscuro al pasar el cursor */
+    color: burlywood; /* Cambia el color del texto al pasar el cursor */
+}
+
+nav ul info{
+    display: inline-block;
+    padding: 10px 20px; /* Ajusta el padding según tu preferencia */
+    text-align: right;
+    text-decoration: none;
+    background-color: #2E8B57; /* Cambia este color al verde oscuro deseado */
+    color: #1337bc; /* Color del texto dentro del botón */
+    border: 2px solid #2E8B57; /* Puedes ajustar el grosor del borde */
+    border-radius: 5px; /* Ajusta el radio de las esquinas según tu preferencia */
+    font-weight: bold; /* Ajusta la fuente según tus preferencias */
+    transition: background-color 0.3s, color 0.3s; /* Efecto de transición suave */
+}
+  
+  /* Cambia el color de fondo y el texto al pasar el cursor sobre el botón */
+nav ul info:hover {
+    
+    background-color: #228B22; /* Cambia este color al verde más oscuro al pasar el cursor */
+    color: burlywood; /* Cambia el color del texto al pasar el cursor */
+}
+

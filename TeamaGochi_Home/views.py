@@ -5,6 +5,7 @@ from django.http import HttpResponse
 from TeamaGochi_Home.models import information
 
 # Create your views here.
+@login_required
 def index(request):
     return render(request, "TeamaGochi_Home/index.html")
 
@@ -14,7 +15,6 @@ def term_and_condition(request):
 def creators(request):
     return render(request, "TeamaGochi_Home/Creators.html")
 
-@login_required
 def settings(request):
     return render(request, "TeamaGochi_Home/settings.html")
 

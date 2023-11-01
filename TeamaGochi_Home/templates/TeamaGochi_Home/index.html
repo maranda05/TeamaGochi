@@ -17,19 +17,32 @@
         
         <nav>
             <ul>
-                {% if request.user.is_authenticated %}
-                {{ user.username | upper }}, welcome.
-                <li><a href="logout/">Logout</a></li>
-                {% else %}
-                <li><a href="">Login</a></li>
-                {% endif %}
-                <li><a href="creators/">Creators</a></li>
-                <li><a href="settings/">Settings</a></li>
-                <li><a href="info/">Animals</a></li>
+                    {% if request.user.is_authenticated %}
+                    {{ user.username | upper }}, welcome.
+                <br>
+                <log>
+                    <li><a href="logout/">Logout</a></li>
+                    {% else %}
+                    <li><a href="">Login</a></li>
+                    {% endif %}
+                </log>    
+                <creadores>
+                    <li><a href="creators/">Creators</a></li>
+                </creadores>
+
+                <sett>
+                    <li><a href="settings/">Settings</a></li>
+                </sett>
+                
+                <info>
+                    <li><a href="info/">Animals</a></li>
+                </info>
+                
                 
             </ul>
         </nav>
     </div>
+    
 </body>
 </html>
 
