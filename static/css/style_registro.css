@@ -1,0 +1,165 @@
+/*css de la pagina para crear sesion*/
+body{
+    background: url(/static/img/naturaleza.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cuadrado0{
+    position: absolute;
+    top: 2.5%; /* Posiciona el cuadrado en el centro vertical */
+    left: 40%; /* Posiciona el cuadrado en el centro horizontal */
+    width: 300px; /* Ancho del cuadrado */
+    height: 100px; /* Altura del cuadrado */
+    background-color: #DAFFDE; /* Color de fondo del cuadrado (azul en este ejemplo) */
+    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
+    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+}
+.cuadrado1{
+    position: absolute;
+    top: 20%; /* Posiciona el cuadrado en el centro vertical */
+    left: 28%; /* Posiciona el cuadrado en el centro horizontal */
+    width: 700px; /* Ancho del cuadrado */
+    height: 60px; /* Altura del cuadrado */
+    background-color: #DAFFDE; /* Color de fondo del cuadrado (azul en este ejemplo) */
+    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
+    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+}
+.cuadrado2{
+    position: absolute;
+    top: 30%; /* Posiciona el cuadrado en el centro vertical */
+    left: 8%; /* Posiciona el cuadrado en el centro horizontal */
+    width: 600px; /* Ancho del cuadrado */
+    height: 100px; /* Altura del cuadrado */
+    background-color: #DAFFDE; /* Color de fondo del cuadrado (azul en este ejemplo) */
+    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
+    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+}
+.cuadrado3{
+    position: absolute;
+    top: 30%; /* Posiciona el cuadrado en el centro vertical */
+    left: 55%; /* Posiciona el cuadrado en el centro horizontal */
+    width: 600px; /* Ancho del cuadrado */
+    height: 100px; /* Altura del cuadrado */
+    background-color: #DAFFDE; /* Color de fondo del cuadrado (azul en este ejemplo) */
+    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
+    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+}
+.cuadrado4{
+    position: absolute;
+    top: 50%; /* Posiciona el cuadrado en el centro vertical */
+    left: 8%; /* Posiciona el cuadrado en el centro horizontal */
+    width: 600px; /* Ancho del cuadrado */
+    height: 100px; /* Altura del cuadrado */
+    background-color: #DAFFDE; /* Color de fondo del cuadrado (azul en este ejemplo) */
+    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
+    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+}
+.cuadrado5{
+    position: absolute;
+    top: 50%; /* Posiciona el cuadrado en el centro vertical */
+    left: 55%; /* Posiciona el cuadrado en el centro horizontal */
+    width: 600px; /* Ancho del cuadrado */
+    height: 100px; /* Altura del cuadrado */
+    background-color: #DAFFDE; /* Color de fondo del cuadrado (azul en este ejemplo) */
+    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
+    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+}
+.cuadrado6{
+    position: absolute;
+    top: 70%; /* Posiciona el cuadrado en el centro vertical */
+    left: 35%; /* Posiciona el cuadrado en el centro horizontal */
+    width: 500px; /* Ancho del cuadrado */
+    height: 100px; /* Altura del cuadrado */
+    background-color: #DAFFDE; /* Color de fondo del cuadrado (azul en este ejemplo) */
+    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
+    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+}
+.ovalo{
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    background-color: #DAFFDE;
+    border-radius: 50%;
+    left:1090px ;
+    top:500px;
+    z-index: 1;
+}
+.texto-titulo{
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    position:absolute;
+    top: 40px; /* Ajusta la posición vertical del texto */
+    left: 569px; /* Ajusta la posición horizontal del texto */
+    color: black;
+    font-weight: bold; 
+    font-size: 37px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+}
+.texto-registro{
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    position:absolute;
+    top: 140px; /* Ajusta la posición vertical del texto */
+    left: 420px; /* Ajusta la posición horizontal del texto */
+    color: black;
+    font-style: italic;
+    font-size: 23px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+}
+
+.texto-nombre{
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    position:absolute;
+    top: 210px; /* Ajusta la posición vertical del texto */
+    left: 140px; /* Ajusta la posición horizontal del texto */
+    color: #9A3820;
+    font-size: 27px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+}
+.texto-contraseña{
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    position:absolute;
+    top: 210px; /* Ajusta la posición vertical del texto */
+    left: 820px; /* Ajusta la posición horizontal del texto */
+    color: #9A3820;
+    font-size: 27px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+}
+.texto-correo{
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    position:absolute;
+    top: 345px; /* Ajusta la posición vertical del texto */
+    left: 140px; /* Ajusta la posición horizontal del texto */
+    color: #9A3820;
+    font-size: 27px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+}
+.texto-confirm{
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    position:absolute;
+    top: 345px; /* Ajusta la posición vertical del texto */
+    left: 820px; /* Ajusta la posición horizontal del texto */
+    color: #9A3820;
+    font-size: 27px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+}
+.texto-leido{
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    position:absolute;
+    top: 500px; /* Ajusta la posición vertical del texto */
+    left: 510px; /* Ajusta la posición horizontal del texto */
+    color: #435961;
+    font-size: 27px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+}
+.texto-reg{
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    position:absolute;
+    top: 550px; /* Ajusta la posición vertical del texto */
+    left: 1150px; /* Ajusta la posición horizontal del texto */
+    color: black;
+    font-weight: bold; 
+    font-size: 30px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+}

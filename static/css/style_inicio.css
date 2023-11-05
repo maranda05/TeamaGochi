@@ -1,0 +1,106 @@
+/*css al entrar en la pagina, sin iniciar sesion*/
+body{
+    background: url(/static/img/fondo_teamagochi.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.rectangulo-superior{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ancho del rectángulo izquierdo */
+    height: 150px; /* Altura del rectángulo que cubre toda la página */
+    background-color: #DEE8D7; /* Color de fondo del rectángulo izquierdo (rojo en este ejemplo) */
+}
+
+.cuadrado1{
+     position: absolute;
+    top: 2.5%; /* Posiciona el cuadrado en el centro vertical */
+    left: 10%; /* Posiciona el cuadrado en el centro horizontal */
+    width: 200px; /* Ancho del cuadrado */
+    height: 50px; /* Altura del cuadrado */
+    background-color: #839891; /* Color de fondo del cuadrado (azul en este ejemplo) */
+    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
+    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+}
+.cuadrado2{
+    position: absolute;
+    top: 12%; /* Posiciona el cuadrado en el centro vertical */
+    left: 10%; /* Posiciona el cuadrado en el centro horizontal */
+    width: 200px; /* Ancho del cuadrado */
+    height: 50px; /* Altura del cuadrado */
+    background-color: #839891; /* Color de fondo del cuadrado (azul en este ejemplo) */
+    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
+    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+}
+.cuadrado3{
+    position: absolute;
+    top: 8%; /* Posiciona el cuadrado en el centro vertical */
+    left: 30%; /* Posiciona el cuadrado en el centro horizontal */
+    width: 210px; /* Ancho del cuadrado */
+    height: 50px; /* Altura del cuadrado */
+    background-color: #839891; /* Color de fondo del cuadrado (azul en este ejemplo) */
+    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
+    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+}
+.cuadrado4{
+    position: absolute;
+    top: 5%; /* Posiciona el cuadrado en el centro vertical */
+    left: 65%; /* Posiciona el cuadrado en el centro horizontal */
+    width: 450px; /* Ancho del cuadrado */
+    height: 10px; /* Altura del cuadrado */
+    background-color: #DAFFDE; /* Color de fondo del cuadrado (azul en este ejemplo) */
+    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
+    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+}
+.cuadrado5{
+    position: absolute;
+    top: 18%; /* Posiciona el cuadrado en el centro vertical */
+    left: 65%; /* Posiciona el cuadrado en el centro horizontal */
+    width: 450px; /* Ancho del cuadrado */
+    height: 10px; /* Altura del cuadrado */
+    background-color: #DAFFDE; /* Color de fondo del cuadrado (azul en este ejemplo) */
+    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
+    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+}
+
+.texto-titulo{
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    position:absolute;
+    top: 35px; /* Ajusta la posición vertical del texto */
+    left: 925px; /* Ajusta la posición horizontal del texto */
+    color: #00BF63;
+    font-size: 90px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+}
+.texto-registro{
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    position:absolute;
+    top: 90px; /* Ajusta la posición vertical del texto */
+    left: 190px; /* Ajusta la posición horizontal del texto */
+    color: #FFE486;
+    font-size: 30px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+}
+
+.texto-sesion{
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    position:absolute;
+    top: 30px; /* Ajusta la posición vertical del texto */
+    left: 165px; /* Ajusta la posición horizontal del texto */
+    color: #DAFFDE;
+    font-size: 30px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+}
+.texto-somos{
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    position:absolute;
+    top: 60px; /* Ajusta la posición vertical del texto */
+    left: 428px; /* Ajusta la posición horizontal del texto */
+    color: #FFE486;
+    font-size: 30px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+}
