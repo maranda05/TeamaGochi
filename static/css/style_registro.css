@@ -9,73 +9,73 @@ body{
 
 .cuadrado0{
     position: absolute;
-    top: 2.5%; /* Posiciona el cuadrado en el centro vertical */
-    left: 40%; /* Posiciona el cuadrado en el centro horizontal */
-    width: 300px; /* Ancho del cuadrado */
-    height: 100px; /* Altura del cuadrado */
-    background-color: #DAFFDE; /* Color de fondo del cuadrado (azul en este ejemplo) */
-    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
-    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+    top: 2.5%; 
+    left: 40%; 
+    width: 300px; 
+    height: 100px; 
+    background-color: #DAFFDE; 
+    transform: translate(0%, 0%); 
+    z-index: 1; 
 }
 .cuadrado1{
     position: absolute;
-    top: 20%; /* Posiciona el cuadrado en el centro vertical */
-    left: 28%; /* Posiciona el cuadrado en el centro horizontal */
-    width: 700px; /* Ancho del cuadrado */
-    height: 60px; /* Altura del cuadrado */
-    background-color: #DAFFDE; /* Color de fondo del cuadrado (azul en este ejemplo) */
-    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
-    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+    top: 20%; 
+    left: 28%; 
+    width: 700px; 
+    height: 60px; 
+    background-color: #DAFFDE; 
+    transform: translate(0%, 0%); 
+    z-index: 1; 
 }
 .cuadrado2{
     position: absolute;
-    top: 30%; /* Posiciona el cuadrado en el centro vertical */
-    left: 8%; /* Posiciona el cuadrado en el centro horizontal */
-    width: 600px; /* Ancho del cuadrado */
-    height: 100px; /* Altura del cuadrado */
-    background-color: #DAFFDE; /* Color de fondo del cuadrado (azul en este ejemplo) */
-    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
-    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+    top: 30%; 
+    left: 8%; 
+    width: 600px; 
+    height: 100px; 
+    background-color: #DAFFDE; 
+    transform: translate(0%, 0%); 
+    z-index: 1; 
 }
 .cuadrado3{
     position: absolute;
-    top: 30%; /* Posiciona el cuadrado en el centro vertical */
-    left: 55%; /* Posiciona el cuadrado en el centro horizontal */
-    width: 600px; /* Ancho del cuadrado */
-    height: 100px; /* Altura del cuadrado */
-    background-color: #DAFFDE; /* Color de fondo del cuadrado (azul en este ejemplo) */
-    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
-    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+    top: 30%; 
+    left: 55%; 
+    width: 600px; 
+    height: 100px; 
+    background-color: #DAFFDE; 
+    transform: translate(0%, 0%); 
+    z-index: 1; 
 }
 .cuadrado4{
     position: absolute;
-    top: 50%; /* Posiciona el cuadrado en el centro vertical */
-    left: 8%; /* Posiciona el cuadrado en el centro horizontal */
-    width: 600px; /* Ancho del cuadrado */
-    height: 100px; /* Altura del cuadrado */
-    background-color: #DAFFDE; /* Color de fondo del cuadrado (azul en este ejemplo) */
-    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
-    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+    top: 50%; 
+    left: 8%; 
+    width: 600px; 
+    height: 100px; 
+    background-color: #DAFFDE; 
+    transform: translate(0%, 0%); 
+    z-index: 1; 
 }
 .cuadrado5{
     position: absolute;
-    top: 50%; /* Posiciona el cuadrado en el centro vertical */
-    left: 55%; /* Posiciona el cuadrado en el centro horizontal */
-    width: 600px; /* Ancho del cuadrado */
-    height: 100px; /* Altura del cuadrado */
-    background-color: #DAFFDE; /* Color de fondo del cuadrado (azul en este ejemplo) */
-    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
-    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+    top: 50%; 
+    left: 55%; 
+    width: 600px; 
+    height: 100px; 
+    background-color: #DAFFDE; 
+    transform: translate(0%, 0%); 
+    z-index: 1; 
 }
 .cuadrado6{
     position: absolute;
-    top: 70%; /* Posiciona el cuadrado en el centro vertical */
-    left: 35%; /* Posiciona el cuadrado en el centro horizontal */
-    width: 500px; /* Ancho del cuadrado */
-    height: 100px; /* Altura del cuadrado */
-    background-color: #DAFFDE; /* Color de fondo del cuadrado (azul en este ejemplo) */
-    transform: translate(0%, 0%); /* Centra el cuadrado correctamente */
-    z-index: 1; /* Coloca el cuadrado encima de los rectángulos */
+    top: 70%; 
+    left: 35%; 
+    width: 500px; 
+    height: 100px; 
+    background-color: #DAFFDE; 
+    transform: translate(0%, 0%); 
+    z-index: 1; 
 }
 .ovalo{
     position: absolute;
@@ -91,75 +91,75 @@ body{
     font-family: 'Times New Roman', Times, serif;
     z-index: 2;
     position:absolute;
-    top: 40px; /* Ajusta la posición vertical del texto */
-    left: 569px; /* Ajusta la posición horizontal del texto */
+    top: 40px; 
+    left: 569px; 
     color: black;
     font-weight: bold; 
-    font-size: 37px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+    font-size: 37px; 
 }
 .texto-registro{
     font-family: 'Times New Roman', Times, serif;
     z-index: 2;
     position:absolute;
-    top: 140px; /* Ajusta la posición vertical del texto */
-    left: 420px; /* Ajusta la posición horizontal del texto */
+    top: 140px; 
+    left: 420px; 
     color: black;
     font-style: italic;
-    font-size: 23px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+    font-size: 23px; 
 }
 
 .texto-nombre{
     font-family: 'Times New Roman', Times, serif;
     z-index: 2;
     position:absolute;
-    top: 210px; /* Ajusta la posición vertical del texto */
-    left: 140px; /* Ajusta la posición horizontal del texto */
+    top: 210px; 
+    left: 140px; 
     color: #9A3820;
-    font-size: 27px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+    font-size: 27px; 
 }
 .texto-contraseña{
     font-family: 'Times New Roman', Times, serif;
     z-index: 2;
     position:absolute;
-    top: 210px; /* Ajusta la posición vertical del texto */
-    left: 820px; /* Ajusta la posición horizontal del texto */
+    top: 210px; 
+    left: 820px; 
     color: #9A3820;
-    font-size: 27px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+    font-size: 27px; 
 }
 .texto-correo{
     font-family: 'Times New Roman', Times, serif;
     z-index: 2;
     position:absolute;
-    top: 345px; /* Ajusta la posición vertical del texto */
-    left: 140px; /* Ajusta la posición horizontal del texto */
+    top: 345px; 
+    left: 140px; 
     color: #9A3820;
-    font-size: 27px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+    font-size: 27px; 
 }
 .texto-confirm{
     font-family: 'Times New Roman', Times, serif;
     z-index: 2;
     position:absolute;
-    top: 345px; /* Ajusta la posición vertical del texto */
-    left: 820px; /* Ajusta la posición horizontal del texto */
+    top: 345px; 
+    left: 820px; 
     color: #9A3820;
-    font-size: 27px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+    font-size: 27px; 
 }
 .texto-leido{
     font-family: 'Times New Roman', Times, serif;
     z-index: 2;
     position:absolute;
-    top: 500px; /* Ajusta la posición vertical del texto */
-    left: 510px; /* Ajusta la posición horizontal del texto */
+    top: 500px; 
+    left: 510px; 
     color: #435961;
-    font-size: 27px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+    font-size: 27px; 
 }
 .texto-reg{
     font-family: 'Times New Roman', Times, serif;
     z-index: 2;
     position:absolute;
-    top: 550px; /* Ajusta la posición vertical del texto */
-    left: 1150px; /* Ajusta la posición horizontal del texto */
+    top: 550px; 
+    left: 1150px; 
     color: black;
     font-weight: bold; 
-    font-size: 30px; /* Ajusta el tamaño de fuente del texto (24 píxeles en este ejemplo) */
+    font-size: 30px; 
 }
