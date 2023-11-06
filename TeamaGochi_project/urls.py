@@ -22,6 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('TeamaGochi_Home.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('buscar/', views.buscar),
-    path('formulario/', views.formulario),
+    
 ]

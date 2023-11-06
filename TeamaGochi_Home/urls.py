@@ -2,7 +2,8 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    path('', views.index),
+    path('', views.inicio),
+    path('index/', views.index),
     path('term-cond/',views.term_and_condition),
     path('creators/',views.creators),
     path('logout/', views.exit),
@@ -10,4 +11,5 @@ urlpatterns = [
     path('info/', views.info),
     path('buscar/', views.buscar),
     path("formulario/", views.formulario),
+    
 ]

@@ -18,12 +18,13 @@
         <nav>
             <ul>
                     {% if request.user.is_authenticated %}
-                    {{ user.username | upper }}, welcome.
+                    Bienvenido @{{ user.username | upper }}
+                <br>
                 <br>
                 <log>
                     <li><a href="logout/">Logout</a></li>
                     {% else %}
-                    <li><a href="">Login</a></li>
+                    <li><a href="login/">Login</a></li>
                     {% endif %}
                 </log>    
                 <creadores>

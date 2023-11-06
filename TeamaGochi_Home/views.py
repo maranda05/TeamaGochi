@@ -1,16 +1,20 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from TeamaGochi_Home.models import information
 
 # Create your views here.
+def inicio(request):
+    return render(request, "TeamaGochi_Home/inicio.html")
+
 @login_required
 def index(request):
-    return render(request, "TeamaGochi_Home/index.html")
+    return render(request, "TeamaGochi_Home/dentro.html")
 
 def term_and_condition(request):
     return render(request, "TeamaGochi_Home/term_and_condition.html")
+
 
 def creators(request):
     return render(request, "TeamaGochi_Home/Creators.html")

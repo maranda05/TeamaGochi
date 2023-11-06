@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'TeamaGochi_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
+        'NAME': 'teamagochi',
         'USER': 'postgres',
-        'PASSWORD': 'papa1234',
+        'PASSWORD': 'Presi.2023',
         'HOST': 'localhost',
         'PORT': '5432'
     }
@@ -128,5 +128,5 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_REDIRECT_URL = "term-cond/"
-LOGOUT_REDIRECT_URL = "/"
+LOGIN_REDIRECT_URL = "index/"
+LOGOUT_REDIRECT_URL = ""
