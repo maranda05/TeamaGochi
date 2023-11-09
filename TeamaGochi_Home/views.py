@@ -17,7 +17,7 @@ def term_and_condition(request):
 
 
 def creators(request):
-    return render(request, "TeamaGochi_Home/index.html/Creators.html")
+    return render(request, "TeamaGochi_Home/Creators.html")
 
 def settings(request):
     return render(request, "TeamaGochi_Home/settings.html")

@@ -14,7 +14,13 @@
     <div id="container_creators">
         <nav>
             <enlace>
-                <li><a href="/">BACK TO INDEX</a></li>
+                <button id="regresar">Regresar</button>
+
+                <script>
+                    document.getElementById('regresar').addEventListener('click', function() {
+                        window.history.back();
+                    });
+                </script>
             </enlace>
             
             <ul>

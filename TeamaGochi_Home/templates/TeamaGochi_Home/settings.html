@@ -13,7 +13,13 @@
 
     <div id="container_settings">
         <nav>
-            <li><a href="/">Atras</a></li>
+            <button id="regresar">Regresar</button>
+
+            <script>
+                document.getElementById('regresar').addEventListener('click', function() {
+                    window.history.back();
+                });
+            </script>
         </nav>
         <br></br>
         <pepecardenas>

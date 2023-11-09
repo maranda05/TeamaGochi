@@ -14,7 +14,13 @@
         </header>
     
         <nav>
-            <li><a href="/">BACK</a></li>
+            <button id="regresar">Regresar</button>
+
+            <script>
+                document.getElementById('regresar').addEventListener('click', function() {
+                    window.history.back();
+                });
+            </script>
         </nav>
 
     </div>
