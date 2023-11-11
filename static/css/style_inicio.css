@@ -1,0 +1,106 @@
+/*css al entrar en la pagina, sin iniciar sesion*/
+body{
+    background: url(/static/img/fondo_teamagochi.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.rectangulo-superior{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 150px; 
+    background-color: #DEE8D7; 
+}
+
+.cuadrado1{
+     position: absolute;
+    top: 2.5%; 
+    left: 10%; 
+    width: 200px; 
+    height: 50px; 
+    background-color: #839891; 
+    transform: translate(0%, 0%); 
+    z-index: 1; 
+}
+.cuadrado2{
+    position: absolute;
+    top: 12%; 
+    left: 10%; 
+    width: 200px; 
+    height: 50px; 
+    background-color: #839891; 
+    transform: translate(0%, 0%); 
+    z-index: 1;
+}
+.cuadrado3{
+    position: absolute;
+    top: 8%; 
+    left: 30%; 
+    width: 210px; 
+    height: 50px; 
+    background-color: #839891; 
+    transform: translate(0%, 0%); 
+    z-index: 1; 
+}
+.cuadrado4{
+    position: absolute;
+    top: 5%; 
+    left: 65%; 
+    width: 450px; 
+    height: 10px; 
+    background-color: #DAFFDE; 
+    transform: translate(0%, 0%); 
+    z-index: 1; 
+}
+.cuadrado5{
+    position: absolute;
+    top: 18%; 
+    left: 65%; 
+    width: 450px; 
+    height: 10px; 
+    background-color: #DAFFDE; 
+    transform: translate(0%, 0%); 
+    z-index: 1; 
+}
+
+.texto-titulo{
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    position:absolute;
+    top: 35px; 
+    left: 925px; 
+    color: #00BF63;
+    font-size: 90px; 
+}
+.texto-registro{
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    position:absolute;
+    top: 90px; 
+    left: 190px; 
+    color: #FFE486;
+    font-size: 30px; 
+}
+
+.texto-sesion{
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    position:absolute;
+    top: 30px; 
+    left: 165px; 
+    color: #DAFFDE;
+    font-size: 30px; 
+}
+.texto-somos{
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    position:absolute;
+    top: 60px;
+    left: 428px; 
+    color: #FFE486;
+    font-size: 30px;
+}

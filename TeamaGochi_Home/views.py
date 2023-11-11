@@ -3,10 +3,25 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from django.http import HttpResponse, HttpResponseRedirect
 from TeamaGochi_Home.models import information
-
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import authenticate, login
 # Create your views here.
 def inicio(request):
     return render(request, "TeamaGochi_Home/inicio.html")
+
+def register(request):
+    data = {
+        "form": CustomUserCreationForm()
+    }
+    if request.method == "POST":
+        formulario = CustomUserCreationForm(data=request.POST)
+        if formulario.is_valid():
+            formulario.save()
+            user = authenticate(username=formulario.cleaned_data["username"], password=formulario.cleaned_data["password1"])
+            login(request,user)
+        data["form"] = formulario
+
+    return render(request, "registration/register.html",data)
 
 @login_required
 def index(request):
@@ -15,9 +30,8 @@ def index(request):
 def term_and_condition(request):
     return render(request, "TeamaGochi_Home/term_and_condition.html")
 
-
 def creators(request):
-    return render(request, "TeamaGochi_Home/index.html/Creators.html")
+    return render(request, "TeamaGochi_Home/Creators.html")
 
 def settings(request):
     return render(request, "TeamaGochi_Home/settings.html")
@@ -46,4 +60,7 @@ def buscar(request):
     else:
             mensaje = "Por favor ingresa un código."
 
-    return HttpResponse(mensaje)      
+    return HttpResponse(mensaje)   
+
+class CustomUserCreationForm(UserCreationForm):
+    pass
