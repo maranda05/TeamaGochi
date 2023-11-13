@@ -20,8 +20,9 @@
                         <form action="" method="post">
 
                             {% csrf_token %}
-                            {{ form | crispy}}
-                            <input type="submit" value="Ingresar" class="btn btn-success float-center">
+                            {{ form | crispy }}
+                            <input type="submit" value="Ingresar" class="btn btn-success float-center" href="index/">
+                                
                         </form>
                         <a href="..">Vuelve a la página principal</a>
                     </div>
