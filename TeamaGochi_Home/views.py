@@ -5,6 +5,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from TeamaGochi_Home.models import information
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
+from django.shortcuts import render, redirect
 # Create your views here.
 def inicio(request):
     return render(request, "TeamaGochi_Home/inicio.html")
@@ -20,7 +21,6 @@ def register(request):
             user = authenticate(username=formulario.cleaned_data["username"], password=formulario.cleaned_data["password1"])
             login(request,user)
         data["form"] = formulario
-
     return render(request, "registration/register.html",data)
 
 @login_required
