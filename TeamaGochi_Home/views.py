@@ -17,9 +17,10 @@ def register(request):
     if request.method == "POST":
         formulario = CustomUserCreationForm(data=request.POST)
         if formulario.is_valid():
-            formulario.save()
+            formulario.save()   
             user = authenticate(username=formulario.cleaned_data["username"], password=formulario.cleaned_data["password1"])
             login(request,user)
+            return redirect("../index")
         data["form"] = formulario
     return render(request, "registration/register.html",data)
 
