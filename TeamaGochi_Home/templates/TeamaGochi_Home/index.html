@@ -18,37 +18,31 @@
         
         <nav>
             <ul>
-                    {% if request.user.is_authenticated %}
-                    Bienvenido @{{ user.username | upper }}
+                {% if request.user.is_authenticated %}
+                Bienvenido @{{ user.username | upper }}
                 <br>
                 <br>
                 <log>
-                    <li><a href="logout/">Logout</a></li>
+                    <a href="logout/">Cerrar sesión</a>
                     {% else %}
-                    <li><a href="login/">Login</a></li>
+                    <a href="login/">Login</a>
                     {% endif %}
                 </log>    
                 <creadores>
-                    <li><a href="creators/">Creators</a></li>
+                    <a href="creators/">Creadores</a>
                 </creadores>
 
                 <sett>
-                    <li><a href="settings/">Settings</a></li>
+                    <a href="settings/">Canjea tu código</a>
                 </sett>
                 
                 <info>
-                    <li><a href="info/">Animals</a></li>
+                    <a href="info/">Animales</a>
                 </info>
                 
                 
             </ul>
         </nav>
         
-    </div>
-    <nav class="cerrar"> 
-        <enlace>
-            <a href="/">CERRAR SESIÓN</a>
-        </enlace>
-    </nav>
 </body>
 </html>

@@ -63,5 +63,8 @@ def buscar(request):
 
     return HttpResponse(mensaje)   
 
+def quienes_somos(request):
+    return render(request, "TeamaGochi_Home/who_we_are.html")
+
 class CustomUserCreationForm(UserCreationForm):
     pass
