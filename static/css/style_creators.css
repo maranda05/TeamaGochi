@@ -1,43 +1,65 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+div{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: aqua;
-    background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url(/static/img/imagen_creadores.png) no-repeat;
+    background-size:cover;
+    background-position: center;
+    
 }
 
-#container{
-    width: 70%;
-    margin: 0px auto;
+.wrapper{
+    width:420px;
+    background:transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-radius: 10px;
+    color:rgb(255, 255, 255);
+    padding: 30px 40px;
 }
 
-header{
-    height: 100px;
-    width: 100%;
+.wrapper h1{
     text-align: center;
-}
-nav enlace a {
-    text-decoration: none;
-  }
-  
-nav enlace li {
-    display: inline-block;
-    padding: 10px 20px; /* Ajusta el padding según tu preferencia */
-    text-align: right;
-    text-decoration: none;
-    background-color: #2E8B57; /* Cambia este color al verde oscuro deseado */
-    color: #1337bc; /* Color del texto dentro del botón */
-    border: 2px solid #2E8B57; /* Puedes ajustar el grosor del borde */
-    border-radius: 5px; /* Ajusta el radio de las esquinas según tu preferencia */
-    font-weight: bold; /* Ajusta la fuente según tus preferencias */
-    transition: background-color 0.3s, color 0.3s; /* Efecto de transición suave */
+    font-size:36px
 
 }
-  
-  /* Cambia el color de fondo y el texto al pasar el cursor sobre el botón */
-nav enlace:hover {
-    background-color: #228B22; /* Cambia este color al verde más oscuro al pasar el cursor */
-    color: burlywood; /* Cambia el color del texto al pasar el cursor */
+
+.texto {
+    text-align: left;
+    width:420px;    
 }
 
-nav ul li{
-    text-align: center;
+a{
+    text-decoration: none;
+    width:250px;
+    background:transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-radius: 10px;
+    color:rgb(255, 255, 255);
+    padding: 30px 40px;
+    position: absolute;
+    bottom: 0; 
+    right: 0; 
+    margin: 10px;
+}
+
+a:visited {
+    color:white;
 }

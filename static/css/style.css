@@ -1,22 +1,36 @@
 
 body{
-    background:aqua;
-    background-size: cover;
-    font-family: Arial;
-    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url(/static/img/fondo_pagina.png) no-repeat;
+    background-size:cover;
+    background-position: center;
+    
 }
 
 #container{
-    width: 70%;
-    margin: 0px auto;
-    border: 1px solid black;
+    width:450px;
+    background:transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-radius: 10px;
+    color:rgb(205, 27, 27);
+    padding: 30px 40px;
+    position: absolute; 
+    top: 10%;
 }
 
 header{
     height: 100px;
     width: 100%;
     text-align: center;
-    color:rgb(20, 185, 53)
+    color:rgb(185, 20, 20)
+}
+h1{
+    font-size: 400%
 }
 
 nav ul a {
@@ -28,7 +42,7 @@ nav ul log{
     padding: 10px 20px; /* Ajusta el padding según tu preferencia */
     text-align: right;
     text-decoration: none;
-    background-color: #2E8B57; /* Cambia este color al verde oscuro deseado */
+    background-color: #888b2e; /* Cambia este color al verde oscuro deseado */
     color: #1337bc; /* Color del texto dentro del botón */
     border: 2px solid #2E8B57; /* Puedes ajustar el grosor del borde */
     border-radius: 5px; /* Ajusta el radio de las esquinas según tu preferencia */
@@ -48,7 +62,7 @@ nav ul creadores{
     padding: 10px 20px; /* Ajusta el padding según tu preferencia */
     text-align: right;
     text-decoration: none;
-    background-color: #2E8B57; /* Cambia este color al verde oscuro deseado */
+    background-color: #888b2e; /* Cambia este color al verde oscuro deseado */
     color: #1337bc; /* Color del texto dentro del botón */
     border: 2px solid #2E8B57; /* Puedes ajustar el grosor del borde */
     border-radius: 5px; /* Ajusta el radio de las esquinas según tu preferencia */
@@ -67,7 +81,7 @@ nav ul sett{
     padding: 10px 20px; /* Ajusta el padding según tu preferencia */
     text-align: right;
     text-decoration: none;
-    background-color: #2E8B57; /* Cambia este color al verde oscuro deseado */
+    background-color: #888b2e; /* Cambia este color al verde oscuro deseado */
     color: #1337bc; /* Color del texto dentro del botón */
     border: 2px solid #2E8B57; /* Puedes ajustar el grosor del borde */
     border-radius: 5px; /* Ajusta el radio de las esquinas según tu preferencia */
@@ -86,7 +100,7 @@ nav ul info{
     padding: 10px 20px; /* Ajusta el padding según tu preferencia */
     text-align: right;
     text-decoration: none;
-    background-color: #2E8B57; /* Cambia este color al verde oscuro deseado */
+    background-color: #888b2e; /* Cambia este color al verde oscuro deseado */
     color: #1337bc; /* Color del texto dentro del botón */
     border: 2px solid #2E8B57; /* Puedes ajustar el grosor del borde */
     border-radius: 5px; /* Ajusta el radio de las esquinas según tu preferencia */
@@ -101,3 +115,18 @@ nav ul info:hover {
     color: burlywood; /* Cambia el color del texto al pasar el cursor */
 }
 
+.cerrar{
+    text-decoration: none;
+    width:250px;
+    background:transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-radius: 10px;
+    color:rgb(255, 255, 255);
+    padding: 30px 40px;
+    position: absolute;
+    bottom: 0; 
+    right: 0; 
+    margin: 10px;
+}
