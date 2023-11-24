@@ -5,26 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/static/img/ajolote.png/">
     <title>Datos</title>
+    <link rel="stylesheet" href="/static/css/style_recepcion_info.css">
 </head>
 <body>
-    <li><a href="/">Atras</a></li>
+    <a href="../../../"><h2>Atras</h2></a>
 
-    <animalitos_s>
-        <p>Animal: <strong>{{query}}</strong></p>
+    <div class="wrapper">
+        
         {% if mascota %}
             <ul>
                 {% for nombre in mascota %}
-                    <h3><u>{{nombre.animal}}</u></h3>
-                    <li>{{nombre.especie}}</li>
-                    <li>{{nombre.cantidad}}</li>
-                    <li>{{nombre.habitat}}</li>
-                    <li>{{nombre.causa}}</li>
-                {% endfor %}
-            </ul>
-        {% else %}
-            <p>No hay animal</p>
-        {% endif %}
+                    <nav class="regresion">
+                        <p>
+                            <h1>ANIMAL OBTENIDO:
+                                <br> 
+                                <strong>
+                                    {{nombre.animal}}
+                                </strong>
+                            </h1>
+                        </p>
+                    </nav>
+                    <br>
+                    <u>Especie</u>: {{nombre.especie}}
+                    <br>
+                    <br>
+                    <u>Cantidad de animales:</u> {{nombre.cantidad}}
+                    <br>
+                    <br>
+                    <u>Habitat:</u> {{nombre.habitat}}
+                    <br>
+                    <br>
+                    <u>Causa de extinción:</u> {{nombre.causa}}
 
-    </animalitos_s>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <p>No hay animal</p>
+                {% endif %}
+                
+            </div>
+            <div class="wrapper-image">
+                <img src="../static/img/{{query}}.png/" alt="foto de prueba">
+            </div>
 </body>
 </html>

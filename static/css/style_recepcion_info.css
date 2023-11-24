@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 div{
     font-family: 'Poppins', sans-serif;
@@ -16,21 +16,27 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:url(/static/img/imagen_creadores.png) no-repeat;
+    background:url(/static/img/paisaje_pixelart.jpg) no-repeat;
     background-size:cover;
-    background-position: center;
+    background-position: right;
     
 }
 
+nav li{
+    text-align: left;
+}
+
 .wrapper{
-    width:420px;
+    width:520px;
     background:transparent;
     border: 2px solid rgba(255,255,255, .2);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0,0,0,.2);
     border-radius: 10px;
-    color:rgb(255, 255, 255);
+    color:white;
     padding: 30px 40px;
+    margin-left: auto;
+    margin-right: 100px;
 }
 
 .wrapper h1{
@@ -39,15 +45,22 @@ body{
 
 }
 
-.texto {
-    text-align: left;
-    width:420px;    
+.wrapper-image {
+    width: 500px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a{
-    text-align: center;
     text-decoration: none;
-    width:250px;
+    width:150px;
     background:transparent;
     border: 2px solid rgba(255,255,255, .2);
     backdrop-filter: blur(20px);
@@ -56,8 +69,8 @@ a{
     color:rgb(255, 255, 255);
     padding: 30px 40px;
     position: absolute;
-    bottom: 0; 
-    right: 0; 
+    top: 10px; 
+    left: 10px; 
     margin: 10px;
 }
 
