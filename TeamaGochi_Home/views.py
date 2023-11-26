@@ -6,7 +6,7 @@ from TeamaGochi_Home.models import information
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import AnimalGuardado, information
+
 
 # Create your views here.
 def inicio(request):
@@ -71,17 +71,3 @@ class CustomUserCreationForm(UserCreationForm):
     pass
 
 
-@login_required
-def infoanimal(request):
-    if request.method == "GET":
-        numero_animal = request.get("numero_animal")
-        animal = get_object_or_404(information, pk = numero_animal)
-
-        AnimalGuardado.objects.create(usuario=request.user, animal=animal)
-
-    return render(request, "recepcion_info.html")    
-
-@login_required
-def animales_guardados(request):
-    animales_guardados = AnimalGuardado.objects.filter(usuario=request.user)
-    return render(request, "animals_info.html" , {"animales_guardados":animales})
