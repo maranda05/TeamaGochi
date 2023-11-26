@@ -16,14 +16,10 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:url(/static/img/paisaje_pixelart.jpg) no-repeat;
+    background:url(/static/img/japoncity.jpg) no-repeat;
     background-size:cover;
-    background-position: right;
+    background-position: center;
     
-}
-
-nav li{
-    text-align: left;
 }
 
 .wrapper{
@@ -35,58 +31,33 @@ nav li{
     border-radius: 10px;
     color:white;
     padding: 30px 40px;
-    margin-left: auto;
-    margin-right: 50px;
 }
 
 .wrapper h1{
     text-align: center;
     font-size:36px
-
 }
 
-.wrapper-image {
-    width: 500px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    border-radius: 10px;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: auto;
-    margin-left: 100px;
-}
-
-.wrapper-text{
-    background:transparent;
-    border: 2px solid rgba(255,255,255, .2);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0,0,0,.2);
-    border-radius: 10px;
-    color:white;
-    padding: 30px 40px;
-    
+.texto {
+    text-align: left;
+    width:420px;    
 }
 
 a{
+    text-align: center;
     text-decoration: none;
-    width:150px;
+    width:250px;
     background:transparent;
     border: 2px solid rgba(255,255,255, .2);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0,0,0,.2);
     border-radius: 10px;
     color:rgb(255, 255, 255);
-    padding: 20px 30px;
+    padding: 30px 40px;
     position: absolute;
-    top: 10px; 
-    left: 10px; 
+    bottom: 0; 
+    right: 0; 
     margin: 10px;
-    text-align: center;
-    justify-content: center;
 }
 
 a:visited {

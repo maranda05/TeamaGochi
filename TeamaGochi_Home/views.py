@@ -50,7 +50,6 @@ def formulario(request):
 def buscar(request):
     mensaje= ""
     animalito=request.GET["code"]
-    print(animalito)
 
     if animalito:
         try:

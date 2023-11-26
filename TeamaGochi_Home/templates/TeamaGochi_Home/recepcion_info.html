@@ -10,9 +10,9 @@
 <body>
     <a href="../../../"><h2>Atras</h2></a>
 
-    <div class="wrapper">
+    {% if mascota %}
+        <div class="wrapper">
         
-        {% if mascota %}
             <ul>
                 {% for nombre in mascota %}
                     <nav class="regresion">
@@ -39,13 +39,15 @@
 
                     {% endfor %}
                 </ul>
-                {% else %}
-                <p>No hay animal</p>
-                {% endif %}
+            </div>
+        <div class="wrapper-image">
+            <img src="../static/img/{{query}}.png" alt="foto de prueba">
+        </div>
+    {% else %}
+    <div class="wrapper-text">
+        <p>No existe un animal con ese código.</p>
+    </div>
+    {% endif %}
                 
-            </div>
-            <div class="wrapper-image">
-                <img src="../static/img/{{query}}.png/" alt="foto de prueba">
-            </div>
 </body>
 </html>
