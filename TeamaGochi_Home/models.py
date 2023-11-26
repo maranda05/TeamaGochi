@@ -123,12 +123,13 @@ class DjangoSession(models.Model):
 
 
 class information(models.Model):
-    idanimal = models.AutoField(primary_key=True, db_column="idanimal")
+    idanimal = models.CharField(max_length=20, blank=True, null=True)
     animal = models.CharField(max_length=20, blank=True, null=True)
     especie = models.CharField(max_length=20, blank=True, null=True)
     cantidad = models.CharField(max_length=10, blank=True, null=True)
     habitat = models.CharField(max_length=500, blank=True, null=True)
     causa = models.CharField(max_length=10000, blank=True, null=True)
+    codigos = models.CharField(primary_key=True, db_column="codigos")
 
     class Meta:
         managed = False

@@ -55,7 +55,7 @@ def buscar(request):
 
     if animalito:
         try:
-            mascota=information.objects.filter(idanimal=animalito)
+            mascota=information.objects.filter(codigos=animalito)
             return render(request, "TeamaGochi_Home/recepcion_info.html", {"mascota":mascota, "query":animalito})
         except information.DoesNotExist:
             mensaje = "No hay animales con el código: %s" % animalito
