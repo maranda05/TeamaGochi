@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,31 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info</title>
     <link rel="stylesheet" href="/static/css/style_animals.css"/>
-    <link rel="icon" href="/static/img/ajolote.png/">
+    <link rel="icon" href="/static/img/4Jolot3.png/">
 </head>
 <body>
-
-    <div id="container_animales">
-        <header>
-            <h1>ANIMALES</h1>
-        </header>
-        <h1>Información de Recepción</h1>
-
-        {% if mascota %}
-            <h2>Detalles del animal con código {{ query }}</h2>
-            <ul>
-                {% for animal in mascota %}
-                    <li>{{ animal.codigo }} - {{ animal.animal }}</li>
-                {% endfor %}
-            </ul>
-        {% else %}
-            <p>{{ mensaje }}</p>
-        {% endif %}
-
-        <nav>
-            <li><a href="..">Atras</a></li>
-        </nav>
-
+    <div>
+        <img src="{% static '/img/4Jolot3.png' %}">
+        <form action="/buscar/" method="get">
+            <input type="hidden" name="code" value="4Jolot3">
+            <button type="submit">Ajolote</button>
+        </form>
+    </div>
+    <div>
+        <img src="{% static '/img/C4reY.png' %}">
+        <form action="/buscar/" method="get">
+            <input type="hidden" name="code" value="C4reY">
+            <button type="submit">Tortuga Carey</button>
+        </form>
+    </div>
+    <div>
+        <img src="{% static '/img/L1nC3.png' %}">
+        <form action="/buscar/" method="get">
+            <input type="hidden" name="code" value="L1nC3">
+            <button type="submit">Lince</button>
+        </form>
+    </div>
+    <div>
+        <img src="{% static '/img/L3MUr.png' %}">
+        <form action="/buscar/" method="get">
+            <input type="hidden" name="code" value="L3MUr">
+            <button type="submit">Lemur</button>
+        </form>
+    </div>
+    <div>
+        <img src="{% static '/img/Mar1p0s4.png' %}">
+        <form action="/buscar/" method="get">
+            <input type="hidden" name="code" value="Mar1p0s4">
+            <button type="submit">Mariposa</button>
+        </form>
+    </div>
+    <div>
+        <img src="{% static '/img/p0l4r.png' %}">
+        <form action="/buscar/" method="get">
+            <input type="hidden" name="code" value="p0la4r">
+            <button type="submit">Oso Polar</button>
+        </form>
+    </div>
+    <div>
+        <img src="{% static '/img/P4nD4.png' %}">
+        <form action="/buscar/" method="get">
+            <input type="hidden" name="code" value="P4nD4">
+            <button type="submit">Panda</button>
+        </form>
+    </div>
+    <div>
+        <img src="{% static '/img/P4ngol1n.png' %}">
+        <form action="/buscar/" method="get">
+            <input type="hidden" name="code" value="P4ngol1n">
+            <button type="submit">Pangolín</button>
+        </form>
+    </div>
+    <div>
+        <img src="{% static '/img/R1No.png' %}">
+        <form action="/buscar/" method="get">
+            <input type="hidden" name="code" value="R1No">
+            <button type="submit">Rinoceronte</button>
+        </form>
+    </div>
+    <div>
+        <img src="{% static '/img/Tigr3.png' %}">
+        <form action="/buscar/" method="get">
+            <input type="hidden" name="code" value="Tigr3">
+            <button type="submit">Tigre</button>
+        </form>
     </div>
 </body>
 </html>
