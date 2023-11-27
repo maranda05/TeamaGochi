@@ -13,7 +13,19 @@
         <header>
             <h1>ANIMALES</h1>
         </header>
-    
+        <h1>Información de Recepción</h1>
+
+        {% if mascota %}
+            <h2>Detalles del animal con código {{ query }}</h2>
+            <ul>
+                {% for animal in mascota %}
+                    <li>{{ animal.codigo }} - {{ animal.animal }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>{{ mensaje }}</p>
+        {% endif %}
+
         <nav>
             <li><a href="..">Atras</a></li>
         </nav>
