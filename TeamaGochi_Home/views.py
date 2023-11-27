@@ -52,15 +52,14 @@ def formulario(request):
 def almacenar_informacion_animales(codigo):
     try:
         # Crea una instancia del modelo 'Animal' con el código proporcionado
-        nuevo_animal = information(codigo=codigo)
+        nuevo_animal = information.objects.filter(codigo=codigo)
 
         # Guarda el nuevo animal en la base de datos
         nuevo_animal.save()
-
         print(f"Se ha almacenado la información del animal con código {codigo} en 'animales'.")
     except Exception as e:
         print(f"Error al almacenar la información en 'animales': {e}")
-        
+
 def buscar(request):
     mensaje= ""
     animalito=request.GET["code"]
@@ -68,13 +67,13 @@ def buscar(request):
     if animalito:
         try:
             mascota=information.objects.filter(codigos=animalito)
+            almacenar_informacion_animales(animalito)
             return render(request, "TeamaGochi_Home/recepcion_info.html", {"mascota":mascota, "query":animalito})
         except information.DoesNotExist:
             mensaje = "No hay animales con el código: %s" % animalito
     else:
             mensaje = "Por favor ingresa un código."
 
-    almacenar_informacion_animales(animalito)
     return HttpResponse(mensaje)   
 
 

@@ -19,6 +19,7 @@ body{
     background:url(/static/img/imagen_creadores.png) no-repeat;
     background-size:cover;
     background-position: center;
+    overflow: hidden;
     
 }
 

@@ -63,7 +63,7 @@ class AuthUserGroups(models.Model):
     class Meta:
         managed = False
         db_table = 'auth_user_groups'
-        unique_together = (('user', 'group'),)
+        unique_together = (('user', 'group'))
 
 
 class AuthUserUserPermissions(models.Model):

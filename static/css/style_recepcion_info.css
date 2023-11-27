@@ -19,7 +19,7 @@ body{
     background:url(/static/img/paisaje_pixelart.jpg) no-repeat;
     background-size:cover;
     background-position: right;
-    
+    overflow: hidden;
 }
 
 nav li{

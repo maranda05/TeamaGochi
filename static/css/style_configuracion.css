@@ -19,6 +19,7 @@ body{
     background:url(/static/img/paisaje.jpg) no-repeat;
     background-size:cover;
     background-position: center;
+    overflow: hidden;
     
 }
 

@@ -19,7 +19,7 @@ body{
     background:url(/static/img/japoncity.jpg) no-repeat;
     background-size:cover;
     background-position: center;
-    
+    overflow: hidden;
 }
 
 .wrapper{
