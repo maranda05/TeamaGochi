@@ -19,15 +19,35 @@
 
         <br>
 
+        
         <pepecardenas>
-            <form action="/buscar/" method="GET">
+            <form id="myForm" action="/buscar/" method="GET" id="return validarFormulario()">
                 <h2>Escribe un código alfanumérico:</h2>
-                <input type="text" name="code" id="" placeholder="Ingresa aqui">
+                <input type="text" name="code" id="code" placeholder="Ingresa aqui">
                 <br><br>
-                <input type="submit" value="Buscar">
+                <input type="submit" value="Buscar" id="submitButton" disabled>
             </form>
+
+            <script>
+                function validarFormulario() {
+                    var codigo = document.getElementById("code").value;
+        
+                    if (codigo.trim() === "") {
+                        alert("Por favor, ingresa un código antes de enviar el formulario.");
+                        return false;
+                    }
+        
+                    return true;
+                }
+        
+                document.getElementById("code").addEventListener("input", function() {
+                    var botonBuscar = document.getElementById("submitButton");
+                    botonBuscar.disabled = this.value.trim() === "";
+                });
+            </script>
         </pepecardenas>
     </div>
+
 
 </body>
 </html>

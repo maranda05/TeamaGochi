@@ -6,6 +6,7 @@ from TeamaGochi_Home.models import information
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
 from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib import messages
 
 
 # Create your views here.
@@ -61,6 +62,7 @@ def buscar(request):
             mensaje = "No hay animales con el código: %s" % animalito
     else:
             mensaje = "Por favor ingresa un código."
+            return render(request, "TeamaGochi_Home/recepcion_info.html", {"query":mensaje})
 
     return HttpResponse(mensaje)   
 

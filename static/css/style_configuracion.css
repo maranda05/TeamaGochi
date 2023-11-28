@@ -69,7 +69,7 @@ a{
     color:rgb(255, 255, 255);
     padding: 30px 40px;
     position: absolute;
-    top: 10px; 
+    bottom: 10px; 
     left: 10px; 
     margin: 10px; 
 }
@@ -77,3 +77,4 @@ a{
 a:visited {
     color:white;
 }
+
