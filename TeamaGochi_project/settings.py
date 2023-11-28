@@ -82,9 +82,9 @@ WSGI_APPLICATION = 'TeamaGochi_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'teamagochi',
+        'NAME': 'teamagochi2',
         'USER': 'postgres',
-        'PASSWORD': 'Presi.2023',
+        'PASSWORD': 'ereri0818',
         'HOST': 'localhost',
         'PORT': '5432'
     }
