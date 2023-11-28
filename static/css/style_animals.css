@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-image: url(../img/prueba.jpg);
     background-size:cover;
     background-position: center;
@@ -15,10 +17,10 @@ header{
     text-align: center;
     display: flex;
     justify-content: center;
-    background:rgb(160, 215, 77);
-    border: 2px solid rgba(255,255,255, .2);
+    background: rgba(160, 215, 77, 0.7);
+    border: 2px solid rgba(160, 215, 77, 0.7);
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    box-shadow: 0 0 10px rgba(160, 215, 77, 0.7);
     border-radius: 10px;
     color:rgb(255, 255, 255);
     padding: 30px 40px;
@@ -48,17 +50,17 @@ header{
     border: 2px solid rgba(255,255,255, .2);
     border-radius: 10px;
     font-size: 16px;
-    background-color: #27dad4; /* Cambia este color al verde oscuro deseado */
-    color: #1337bc; /* Color del texto dentro del botón */
-    border: 2px solid #3dc444; /* Puedes ajustar el grosor del borde */
-    border-radius: 5px; /* Ajusta el radio de las esquinas según tu preferencia */
-    font-weight: bold; /* Ajusta la fuente según tus preferencias */
+    background-color: #27dad4; 
+    color: #1337bc;
+    border: 2px solid #3dc444; 
+    border-radius: 5px; 
+    font-weight: bold; 
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    transition: background-color 0.3s ease; 
 }
 
 .boton:hover {
-    background-color: #3dc444; /* Nuevo color al pasar el mouse */
+    background-color: #3dc444;
 }
 
 a{
@@ -66,14 +68,14 @@ a{
     text-decoration: none;
     width:150px;
     background:transparent;
-    border: 2px solid rgb(160, 215, 77);;
+    border: 2px solid rgb(160, 215, 77);
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgb(160, 215, 77);;
+    box-shadow: 0 0 10px rgb(160, 215, 77);
     border-radius: 10px;
     color:rgb(255, 255, 255);
     padding: 30px 40px;
     position: absolute;
-    top: 10px; 
+    bottom: 10px; 
     left: 10px; 
     margin: 10px; 
 }
