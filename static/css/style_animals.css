@@ -1,41 +1,58 @@
 body{
-    background-color: aqua;
-    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-#container{
-    width: 70%;
-    margin: 0px auto;
+    background-image: url(../img/paisaje_nieve.png);
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
 }
 
 header{
-    height: 100px;
-    width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    background:transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-radius: 10px;
+    color:rgb(255, 255, 255);
+    padding: 30px 40px;
+    margin: 70px;
 }
 
-nav li a {
-    text-decoration: none;
-  }
-  
-nav li {
-    display: inline-block;
-    padding: 10px 20px; 
-    text-align: right;
-    text-decoration: none;
-    background-color: #2E8B57; 
-    color: #1337bc; 
-    border: 2px solid #2E8B57; 
-    border-radius: 5px; 
-    font-weight: bold; 
-    transition: background-color 0.3s, color 0.3s; 
-
+.carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
 }
-  
-  
-nav li:hover {
-    background-color: #228B22; 
-    color: burlywood; 
+
+.elemento{
+    width:420px;
+    background:transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-radius: 10px;
+    color:rgb(255, 255, 255);
+    padding: 30px 40px;
+    margin: 50px;
+}
+
+.boton {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Color verde inicial */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.boton:hover {
+    background-color: #45a049; /* Nuevo color al pasar el mouse */
 }
