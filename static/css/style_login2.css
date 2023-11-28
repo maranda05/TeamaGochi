@@ -13,7 +13,7 @@ div{
 
 body{
     min-height: 100vh;
-    background:url(/static/img/fondo.jpg) no-repeat;
+    background:url(/static/img/otro_paisaje.jpg) no-repeat;
     background-size:cover;
     background-position: center;
     overflow: hidden;
