@@ -45,14 +45,39 @@ header{
 
 .boton {
     padding: 15px 30px;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 10px;
     font-size: 16px;
-    background-color: #4CAF50; /* Color verde inicial */
-    color: white;
-    border: none;
+    background-color: #27dad4; /* Cambia este color al verde oscuro deseado */
+    color: #1337bc; /* Color del texto dentro del botón */
+    border: 2px solid #3dc444; /* Puedes ajustar el grosor del borde */
+    border-radius: 5px; /* Ajusta el radio de las esquinas según tu preferencia */
+    font-weight: bold; /* Ajusta la fuente según tus preferencias */
     cursor: pointer;
     transition: background-color 0.3s ease; /* Transición suave del color de fondo */
 }
 
 .boton:hover {
-    background-color: #45a049; /* Nuevo color al pasar el mouse */
+    background-color: #3dc444; /* Nuevo color al pasar el mouse */
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    width:250px;
+    background:transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(255, 118, 118, 0.2);
+    border-radius: 10px;
+    color:rgb(255, 255, 255);
+    padding: 30px 40px;
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    margin: 10px; 
+}
+
+a:visited {
+    color:white;
 }
